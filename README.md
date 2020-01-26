@@ -7,16 +7,16 @@ Horiseon Social Solution Services, Inc. website has been modified to improve the
 Horiseon Social Solution Services, Inc. website has been modified for accessibility following the guidelines seth forth by Web Content Accessibility Guidelines (WCAG) set by W3C.  Semantic markup structure has been pulled from Mozilla Developer (2019). 
 **__General Structure__**
 
-1.` <Head>content</head>`
-1. `<Header>content</header>`
-1. `<body>`
-..1. `<main>`
-...1. `<article><h2>heading</h2>content</article>`
-....1. `<img alt="description"...>`
-...1. `<aside><h3>heading</h3>content</aside>`
-..1. `</main>`
-..1. `<footer>content</footer>`
-1. `<body>`
+*` <Head>content</head>`
+* `<Header>content</header>`
+* `<body>`
+    * `<main>`
+            *`<article><h2>heading</h2>content</article>`
+                * `<img alt="description"...>`
+            * `<aside><h3>heading</h3>content</aside>`
+    * `</main>`
+    * `<footer>content</footer>`
+* `<body>`
 
 
 ## Credits
