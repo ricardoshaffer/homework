@@ -11,9 +11,9 @@ Horiseon Social Solution Services, Inc. website has been modified for accessibil
 * `<Header>content</header>`
 * `<body>`
     * `<main>`
-        *`<article><h2>heading</h2>content</article>`
-        *`<img alt="description"...>`
-        *`<aside><h3>heading</h3>content</aside>`
+        * `<article><h2>heading</h2>content</article>`
+        * `<img alt="description"...>`
+        * `<aside><h3>heading</h3>content</aside>`
     * `</main>`
     * `<footer>content</footer>`
 * `<body>`
