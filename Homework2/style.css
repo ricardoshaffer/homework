@@ -1,21 +1,51 @@
 body {
-    background-color:#98fcfc;
+    background-color:#fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: lowercase;
+}
+.carousel-item {
+    transition: transform 1s linear;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+.carousel:after{
+    display:block;
+    background-image: url('');
+    clear:both;
+}
+.display-4 {
     color: #fff;
+    font-size: 2em;
+}
+.jumbotron {
+    background-color: #98fcfc;
+}
+.mr-auto, .mx-auto {
+    margin-left: auto !important;
+    margin-right: unset;
+}
+.mt-n1 {
+    margin-top: -0.25rem !important;
+  }
+.navbar {
+    clear: both;
 }
 .navbar-brand img {
-    max-height: 40px;
-    -webkit-filter: hue-rotate(60deg);
-    filter: hue-rotate(60deg);
+    max-height: 50px;
 }
 .bg-pick{
     background-color: #000000;
-    color: #333;
-    font-size: 24px;
+    color: #ffffff;
+    font-size: 20px;
 }
 .nav-link {
     color: #fff!important;
 }
-@media only screen and (min-width: 600px){}
+@media only screen and (min-width: 600px){
 header {
 }
+}
+.jumbotron{
+    margin-top: 0%;
 }
