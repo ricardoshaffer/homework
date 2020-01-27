@@ -4,14 +4,15 @@ body {
     text-transform: lowercase;
 }
 .carousel-item {
-    transition: transform 1s linear;
     width: 100%;
-    overflow: hidden;
-    display: block;
+    transition: 2s linear;
+}
+.carousel {
+    background-image: url('images/personal-banner.png');
+    background-position: center;
+    background-size: 100%;
 }
 .carousel:after{
-    display:block;
-    background-image: url('');
     clear:both;
 }
 .display-4 {
