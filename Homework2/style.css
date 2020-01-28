@@ -2,6 +2,7 @@ body {
     background-color:#fff;
     font-family: 'Poppins', sans-serif;
     text-transform: lowercase;
+    margin-bottom: 0px;
 }
 .balloon {
   width: 100px;
@@ -76,12 +77,25 @@ body {
 .col-md img {
     max-width: 300px;
 }
-
+footer {
+    background-color: #000000;
+    color: #666666;
+    padding: 10px 0px 10px 0px;
+}
 .jumbotron, .container-fluid {
     background-color: #e1fffb;
     max-width: 100%;
     left: auto;
     right: auto;
+}
+.list-group-item {
+    all: none;
+    background-color: inherit !important;
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+.list-group-item a{
+    color: #fff;
 }
 .mr-auto, .mx-auto {
     margin-left: auto !important;
@@ -113,4 +127,15 @@ header {
 }
 .jumbotron{
     margin-top: 0%;
+}
+@media only screen and (min-width: 600px){
+.blingbling  {
+    margin-right: auto;
+    margin-left: 20vw;
+}
+}
+@media only screen and (max-width: 599px){
+ .float-left {
+    float:none !important;
+    }
 }
