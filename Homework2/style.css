@@ -12,11 +12,11 @@ body {
   position: relative;
   -webkit-animation-name: hotair; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 12s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-iteration-count: 10; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 20; /* Safari 4.0 - 8.0 */
   -webkit-animation-direction: alternate-reverse; /* Safari 4.0 - 8.0 */
   animation-name: hotair;
   animation-duration: 12s linear;
-  animation-iteration-count: 10;
+  animation-iteration-count: 20;
   animation-direction: alternate-reverse;
   animation-timing-function: linear;
 }
@@ -61,6 +61,11 @@ body {
     width: 100%;
     transition: 3s linear;
 }
+.container-fluid .col-md {
+    color: #96ccc6;
+    min-height: 100px;
+    border: 1px solid #bdd5db;
+}
 .d-none {
     display:flex!important;
 }
@@ -68,8 +73,15 @@ body {
     color: #96ccc6;
     font-size: 2em;
 }
-.jumbotron {
+.col-md img {
+    max-width: 300px;
+}
+
+.jumbotron, .container-fluid {
     background-color: #e1fffb;
+    max-width: 100%;
+    left: auto;
+    right: auto;
 }
 .mr-auto, .mx-auto {
     margin-left: auto !important;
