@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -22,9 +21,6 @@
   <meta name="twitter:title" content="Ricardo Shaffer's Portfolio">
   <meta name="twitter:description" content="Ricardo Shaffer's full-stack development portfolio page.">
   <script>
-    $('#carousel-inner').on('slid.bs.carousel', function (e) {
-  $('#carousel-inner').carousel('1') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
-})
      $(function () {
     $('[data-toggle="tooltip"]').tooltip()
     });
@@ -36,20 +32,21 @@
 <main>
 <!-- Start of Main Body Content-->
 <body>
+<!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-pick">
     <div class="container">
-    <a class="navbar-brand" href="#"><header><img src="images/wht-blue-logo.png" alt="Ricardo Shaffer's portfolio"></header></a>
+    <a class="navbar-brand" href="index.html"><header><img src="images/wht-blue-logo.png" alt="Ricardo Shaffer's portfolio"></header></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav active mr-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="portfolio.html" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="https://pupato.com" target="_blank">Pupato</a>
           <a class="dropdown-item" href="https://whitefauxtaxidermy.com" target="_blank">White Faux Taxidermy</a>
-          <a class="dropdown-item" href="#">More</a>
+          <a class="dropdown-item" href="portfolio.html">More</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">Contact</span></a>
@@ -58,24 +55,7 @@
     </div>
   </div>
   </nav>
-  <!--end of header-->
-  <div id="carouselHome" class="carousel slide" data-ride="carousel" data-wrap="false">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-interval="300">
-          <img src="images/airplane-banner.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item" data-interval="500">
-        <img src="images/airplane-banner-2.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/blank-slide-personal.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block"><div class="balloon" data-toggle="tooltip" data-html="true" title="let's make your site fly."></div>
-          <h5>Personal Portfolio</h5>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
+  <!--end of Navigation / header-->
   <div class="container-fluid">
     <div class="row">
       <div class="col-md">
@@ -108,7 +88,7 @@
       </div>
       <div class="col-md-2">
         <ul class="list-group list-group-horizontal-md">
-          <li class="list-group-item flex-fill"><a href="/">Home</a></li>
+          <li class="list-group-item flex-fill"><a href="index.html">Home</a></li>
           <li class="list-group-item flex-fill"><a href="portfolio.html">Portfolio</a></li>
           <li class="list-group-item flex-fill"><a href="contact.html">Contact</a></li>
         </ul>

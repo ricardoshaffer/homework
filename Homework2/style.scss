@@ -1,0 +1,149 @@
+/*================ Portfolio Variables ================*/
+// Colors
+$colorBackground: #e1fffb;
+$colorHeaders: #96ccc6;
+$colorBorders: #bdd5db;
+$colorNavBkg: #000000;
+$colorLighttext: #ffffff;
+body {
+    background-color:#fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: lowercase;
+    margin-bottom: 0px;
+}
+.balloon {
+  width: 100px;
+  height: 100px;
+  background-image: url('images/hotair-balloon.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  -webkit-animation-name: hotair; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 12s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 20; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: alternate-reverse; /* Safari 4.0 - 8.0 */
+  animation-name: hotair;
+  animation-duration: 12s linear;
+  animation-iteration-count: 20;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes hotair {
+    0%   {left: 0vw; right: 0vw; bottom: 3vw;}
+    25%  {left: 20vw; right: -10vw; bottom:0vw;}
+    50%  {left: 35vw; right: -15vw; bottom:3vw;}
+    75%  {left: 50vw; right: -10vw; bottom:0vw;}
+    100% {left: 65vw; right: -5vw; bottom: 3vw;}
+}
+
+/* Standard syntax */
+@keyframes hotair {
+    0%   {left: 0vw; right: 0vw; bottom: 3vw;}
+    25%  {left: 20vw; right: -10vw; bottom:0vw;}
+    50%  {left: 35vw; right: -15vw; bottom:3vw;}
+    75%  {left: 50vw; right: -10vw; bottom:0vw;}
+    100% {left: 65vw; right: -5vw; bottom: 3vw;}
+}
+.carousel {
+    background-image: url('images/personal-banner.png');
+    background-position: center;
+    background-size: 100%;
+}
+.carousel:after{
+    clear:both;
+}
+.carousel-caption {
+    bottom: 50%;
+    top: 50%;
+    color: #666666;
+    padding: 0px 0px 0px 0px;
+}
+.carousel-caption h5 {
+    text-shadow: 0px 0px 3px #57918a;
+    color: $colorLighttext;
+    font-size: 2em;
+}
+.carousel-item {
+    width: 100%;
+    transition: 3s linear;
+}
+.container-fluid .col-md {
+    color: $colorHeaders;
+    min-height: 100px;
+    border: 1px solid $colorBorders;
+}
+.d-none {
+    display:flex!important;
+}
+.display-4 {
+    color: $colorHeaders;
+    font-size: 2em;
+}
+.col-md img {
+    max-width: 300px;
+}
+footer {
+    background-color: $colorNavBkg;
+    color: #666666;
+    padding: 10px 0px 10px 0px;
+}
+.jumbotron, .container-fluid {
+    background-color: $colorBackground;
+    max-width: 100%;
+    left: auto;
+    right: auto;
+}
+.list-group-item {
+    all: none;
+    background-color: inherit !important;
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+.list-group-item a{
+    color: #fff;
+}
+.mr-auto, .mx-auto {
+    margin-left: auto !important;
+    margin-right: unset;
+}
+.mt-n1 {
+    margin-top: -0.25rem !important;
+  }
+.navbar {
+    clear: both;
+}
+.navbar-brand img {
+    max-height: 50px;
+}
+.bg-pick{
+    background-color:$colorNavBkg;
+    ;
+    color: $colorLighttext;
+    font-size: 20px;
+}
+.nav-link {
+    color: $colorLighttext!important;
+}
+.lead {
+    color:#4c4747;
+}
+@media only screen and (min-width: 600px){
+header {
+}
+}
+.jumbotron{
+    margin-top: 0%;
+}
+@media only screen and (min-width: 600px){
+.blingbling  {
+    margin-right: auto;
+    margin-left: 20vw;
+}
+}
+@media only screen and (max-width: 599px){
+ .float-left {
+    float:none !important;
+    }
+}
