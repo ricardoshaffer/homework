@@ -7,6 +7,7 @@ Personal Portfolio website for Ricardo Shaffer featuring (3) pages:
 ## Architecture
 **_Wireframe_**
 *   General stucture follows accessibility guidelines: header, navigation, main, section, footer.
+
 **_Structure_**
 *   Navigation, tables, and footer CSS utilizing BootStrap css file and hover tool utilizing BootStrap javascript.
 
