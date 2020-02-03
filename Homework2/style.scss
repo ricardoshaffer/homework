@@ -77,11 +77,12 @@ body {
     width: 100%;
     transition: 3s linear;
 }
+.container-fluid .row{
+    align-items: flex-start;
+}
 .container-fluid .col-md {
     color: $colorHeaders;
     min-height: 100px;
-    border: 1px solid $colorBorders;
-    background-color: $colorBackground;
 }
 .d-none {
     display:inline-table!important;
@@ -92,6 +93,8 @@ body {
 }
 .col-md img {
     max-width: 300px;
+    align-content: center;
+    overflow: hidden;
 }
 footer {
     background-color: $colorNavBkg;
@@ -113,6 +116,11 @@ h1 {
     color: #fff;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+}
+.fab {
+    font-size: 2em;
+    padding: 5px;
+    align-content: center;
 }
 .jumbotron {
     max-width: 100%;
