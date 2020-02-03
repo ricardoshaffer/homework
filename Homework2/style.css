@@ -4,6 +4,8 @@ body {
   font-family: "Poppins", sans-serif;
   text-transform: lowercase;
   margin-bottom: 0px;
+  color: #5f595c;
+  background-image: linear-gradient(to right, #4699f7, #18f1b0);
 }
 
 .balloon {
@@ -90,21 +92,23 @@ body {
   background-size: 100%;
 }
 
-.carousel:after {
-  clear: both;
-}
-
 .carousel-caption {
-  bottom: 50%;
-  top: 50%;
-  color: #666666;
+  top: 10%;
   padding: 0px 0px 0px 0px;
+  left: 20%;
 }
 
 .carousel-caption h5 {
-  text-shadow: 0px 0px 3px #57918a;
+  text-shadow: 0px 0px 3px #fffff;
   color: #ffffff;
-  font-size: 2em;
+  font-size: 8vw;
+  letter-spacing: -0.5vw;
+  color: #4699f7;
+}
+
+.carousel-caption p {
+  font-size: 6vw;
+  color: #5f595c;
 }
 
 .carousel-item {
@@ -113,17 +117,18 @@ body {
 }
 
 .container-fluid .col-md {
-  color: #96ccc6;
+  color: #4699f7;
   min-height: 100px;
-  border: 1px solid #bdd5db;
+  border: 1px solid #fff;
+  background-color: #ffffff;
 }
 
 .d-none {
-  display: flex !important;
+  display: inline-table !important;
 }
 
 .display-4 {
-  color: #96ccc6;
+  color: #ffffff;
   font-size: 2em;
 }
 
@@ -137,11 +142,30 @@ footer {
   padding: 10px 0px 10px 0px;
 }
 
-.jumbotron, .container-fluid {
-  background-color: #e1fffb;
+.container-fluid {
   max-width: 100%;
   left: auto;
   right: auto;
+}
+
+.container .foot {
+  position: sticky;
+  display: block;
+  top: 90%;
+  bottom: 10%;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.jumbotron {
+  max-width: 100%;
+  left: auto;
+  right: auto;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .list-group-item {
@@ -166,6 +190,7 @@ footer {
 
 .navbar {
   clear: both;
+  box-shadow: 0px 0px 2em #c3ffed;
 }
 
 .navbar-brand img {
@@ -183,7 +208,12 @@ footer {
 }
 
 .lead {
-  color: #4c4747;
+  color: #ffffff;
+  text-shadow: 0px 0px 2px #4699f7;
+}
+
+.text-hide {
+  height: 50px;
 }
 
 .jumbotron {

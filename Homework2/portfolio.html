@@ -32,38 +32,85 @@
 <!-- Start of Main Body Content-->
 <body>
 <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-pick">
-    <div class="container">
-    <a class="navbar-brand" href="index.html"><header><img src="images/wht-blue-logo.png" alt="Ricardo Shaffer's portfolio"></header></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav active mr-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="portfolio.html" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="https://pupato.com" target="_blank">Pupato</a>
-          <a class="dropdown-item" href="https://whitefauxtaxidermy.com" target="_blank">White Faux Taxidermy</a>
-          <a class="dropdown-item" href="portfolio.html">More</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="contact.html">Contact</span></a>
-        </li>
-      </ul>
-    </div>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-pick">
+  <div class="container">
+  <a class="navbar-brand" href="index.html"><header><img src="images/ricardo-s-hw-logo.png" alt="Ricardo Shaffer's portfolio"></header></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav active mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.html">Contact</span></a>
+      </li>
+    </ul>
   </div>
-  </nav>
+</div>
+</nav>
   <!--end of Navigation / header-->
   <main>
+    <h1>Portfolio</h1>
     <section>
-      <div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</div>
-    </section>
-    <section>
-      <div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</div>
-    </section>
-    <section>
-      <div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</div>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Website Design & SEO
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="card-body">
+                <article>
+                <div class="shadow-lg p-3 mb-5 bg-white rounded"><a href="https://pupato.com" target="_blank"><h1 class="text-hide" style="background-image: url('https://cdn.shopify.com/s/files/1/0251/2525/7269/files/Pupato-logo-blk1.png?v=1574359817'); background-size:contain; background-repeat: no-repeat;">https://Pupato.com</h1></a>
+                  <p>Pupato.com, offering treats to calm anxious or rambunctious pet dogs & cats.
+                    <ul>
+                      <li>Graphic Illustrations</li>
+                      <li>Website Design</li>
+                      <li>Search-Engine Optimization</li>
+                      <li>Marketing Campaigns</li>
+                    </ul>
+                  </p>
+                </div>
+              </article>
+              <article>
+              <div class="shadow-lg p-3 mb-5 bg-white rounded"><a href="https://whitefauxtaxidermy.com" target="_blank"><h1 class="text-hide" style="background-image: url('https://cdn.shopify.com/s/files/1/1865/9309/files/white-faux-taxdiermy-zebra-animal-logo-2019-R_200x@2x.PNG?v=1562764451'); background-size:contain; background-repeat: no-repeat;">https://WhiteFauxTaxidermy.com</h1></a>
+                  <p>White Faux Taxidermy, contemporary & animal-friendly faux taxidermy wall decor.
+                    <ul>
+                      <li>Graphic Design</li>
+                      <li>Search-Engine Optimization</li>
+                      <li>Search Engine (re)marketing</li>
+                      <li>Website Design</li>
+                    </ul>
+                  </p>
+              </div>
+            </article>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Coding
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="shadow-lg p-3 mb-5 bg-white rounded">Example of Coding #1</div>
+              <div class="shadow-lg p-3 mb-5 bg-white rounded">Example of Coding #2</div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
     </section>
   <div class="container-fluid">
     <div class="row">
@@ -78,19 +125,13 @@
       </div>
     </div>
   </div>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Pitch</h1>
-      <p class="lead">Add something</p>
-    </div>
-  </div>
 <!-- <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button> -->
 <!-- <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
   Tooltip with HTML
 </button> -->
 </main>
 <footer>
-  <div class="container">
+  <div class="container foot">
     <div class="row justify-content-md-center">
       <div class="col-md-2">
         copyright

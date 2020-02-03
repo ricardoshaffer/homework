@@ -1,15 +1,20 @@
 /*================ Portfolio Variables ================*/
 // Colors
-$colorBackground: #e1fffb;
-$colorHeaders: #96ccc6;
-$colorBorders: #bdd5db;
+$colorBackground:#ffffff;
+$colorHeaders: #4699f7;
+$colorText: #5f595c;
+$colorBorders: #fff;
 $colorNavBkg: #000000;
 $colorLighttext: #ffffff;
+$colorParagraph: #ffffff;
+$colorShadow: #c3ffed;
 body {
     background-color:#fff;
     font-family: 'Poppins', sans-serif;
     text-transform: lowercase;
     margin-bottom: 0px;
+    color: $colorText;
+    background-image: linear-gradient(to right, #4699f7, rgb(24, 241, 176));
 }
 .balloon {
   width: 100px;
@@ -51,19 +56,22 @@ body {
     background-position: center;
     background-size: 100%;
 }
-.carousel:after{
-    clear:both;
-}
+
 .carousel-caption {
-    bottom: 50%;
-    top: 50%;
-    color: #666666;
+    top: 10%;
     padding: 0px 0px 0px 0px;
+    left: 20%;
 }
 .carousel-caption h5 {
-    text-shadow: 0px 0px 3px #57918a;
+    text-shadow: 0px 0px 3px #fffff;
     color: $colorLighttext;
-    font-size: 2em;
+    font-size: 8vw;
+    letter-spacing: -0.5vw;
+    color: $colorHeaders;
+}
+.carousel-caption p {
+    font-size: 6vw;
+    color:$colorText;
 }
 .carousel-item {
     width: 100%;
@@ -73,12 +81,13 @@ body {
     color: $colorHeaders;
     min-height: 100px;
     border: 1px solid $colorBorders;
+    background-color: $colorBackground;
 }
 .d-none {
-    display:flex!important;
+    display:inline-table!important;
 }
 .display-4 {
-    color: $colorHeaders;
+    color: $colorLighttext;
     font-size: 2em;
 }
 .col-md img {
@@ -89,11 +98,27 @@ footer {
     color: #666666;
     padding: 10px 0px 10px 0px;
 }
-.jumbotron, .container-fluid {
-    background-color: $colorBackground;
+.container-fluid {
     max-width: 100%;
     left: auto;
     right: auto;
+}
+.container .foot {
+    position: sticky;
+    display: block;
+    top: 90%;
+    bottom:10%;
+}
+h1 {
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.jumbotron {
+    max-width: 100%;
+    left:auto;
+    right:auto;
+    background-color: rgba(255,255,255,0.0);
 }
 .list-group-item {
     all: none;
@@ -113,6 +138,7 @@ footer {
   }
 .navbar {
     clear: both;
+    box-shadow: 0px 0px 2em $colorShadow;
 }
 .navbar-brand img {
     max-height: 50px;
@@ -127,7 +153,11 @@ footer {
     color: $colorLighttext!important;
 }
 .lead {
-    color:#4c4747;
+    color: $colorParagraph;
+    text-shadow: 0px 0px 2px $colorHeaders;
+}
+.text-hide {
+    height:50px;
 }
 @media only screen and (min-width: 600px){
 header {
